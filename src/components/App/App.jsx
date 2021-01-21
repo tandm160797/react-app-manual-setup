@@ -4,7 +4,7 @@ import './App.scss';
 const App = () => {
   return (
     <h1
-      className="title"
+      className="text-center text-info border border-success"
     >
       Hello World!
     </h1>

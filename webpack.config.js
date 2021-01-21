@@ -8,7 +8,8 @@ module.exports = {
     bundle: './src/index.jsx',
     vendor: [
       'react',
-      'react-dom'
+      'react-dom',
+      'reactstrap'
     ]
   },
   output: {
@@ -31,7 +32,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(sass|scss)$/,
+        test: /\.(css|sass|scss)$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
