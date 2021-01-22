@@ -9,7 +9,9 @@ module.exports = {
     vendor: [
       'react',
       'react-dom',
-      'reactstrap'
+      'react-redux',
+      'reactstrap',
+      '@reduxjs/toolkit'
     ]
   },
   output: {
@@ -44,7 +46,9 @@ module.exports = {
   devtool: 'eval-source-map',
   resolve: {
     alias: {
-      '$components': path.resolve(__dirname, 'src/components')
+      '$components': path.resolve(__dirname, 'src/components'),
+      '$hooks': path.resolve(__dirname, 'src/hooks'),
+      '$redux-toolkit': path.resolve(__dirname, 'src/redux-toolkit')
     }
   },
   plugins: [
